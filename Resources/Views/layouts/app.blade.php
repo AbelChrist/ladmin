@@ -53,7 +53,7 @@
           {{-- Profile Menu --}}
           <li class="ladmin-dropdown">
             <a href="">
-            <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white">{{ strtoupper(substr($user->name, 0, 2)) }}</div>
+              <div title="Avatar" class="w-8 h-8 rounded-full bg-avatar flex items-center justify-center text-white">{{ strtoupper(substr($user->name, 0, 2)) }}</div>
             </a>
 
             <x-ladmin-toprightmenu />
@@ -74,7 +74,7 @@
             </a>
           @endif
           
-          <h3 class="text-xl text-primary inline-block font-bold">{{ $title ?? 'Page Title' }}</h3>
+          <h3 class="text-xl text-primary inline-block font-bold">{!! $title ?? 'Page Title' !!}</h3>
         </div>
         
         <x-ladmin-breadcrumb />
