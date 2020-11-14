@@ -1,5 +1,4 @@
-@extends('ladmin::layouts.app')
-@section('title', $title ?? null)
-@section('content')
+<x-ladmin-layout>
+    <x-slot name="title">{{ $title }}</x-slot>
     Home Administrator
-@endsection
+</x-ladmin-layout>

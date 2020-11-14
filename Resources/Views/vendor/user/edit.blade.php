@@ -1,6 +1,6 @@
-@extends('ladmin::layouts.app')
-@section('title', 'Edit User')
-@section('content')
+<x-ladmin-layout>
+  
+  <x-slot name="title">Edit User</x-slot>
     
   <x-ladmin-card>
     <form action="{{ route('administrator.account.admin.update', $user->id) }}" method="post">
@@ -17,4 +17,4 @@
     </form>
   </x-ladmin-card>
 
-@endsection
+</x-ladmin-layout>

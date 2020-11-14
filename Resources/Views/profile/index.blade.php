@@ -1,6 +1,6 @@
-@extends('ladmin::layouts.app')
-@section('title', 'Profile')
-@section('content')
+<x-ladmin-layout>
+  
+  <x-slot name="title">Profile</x-slot>
     
 <x-ladmin-card>
   <form action="{{ route('administrator.profile.store') }}" method="post">
@@ -16,4 +16,4 @@
   </form>
 </x-ladmin-card>
 
-@endsection
+</x-ladmin-layout>

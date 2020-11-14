@@ -19,6 +19,7 @@ use Hexters\Ladmin\Components\Cores\Alert;
 use Hexters\Ladmin\Components\Datatables;
 use Hexters\Ladmin\Components\Cores\Notification;
 use Hexters\Ladmin\Components\FormGroup;
+use Hexters\Ladmin\Components\Layout;
 
 /**
  * Command
@@ -108,7 +109,8 @@ class LadminServiceProvider extends ServiceProvider
             Datatables::class,
             Alert::class,
             Notification::class,
-            FormGroup::class
+            FormGroup::class,
+            Layout::class
         ]);
         
 

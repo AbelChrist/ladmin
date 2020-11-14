@@ -5,7 +5,10 @@
     /**
      * Url image logo
      */
-    'logo' => env('LADMIN_LOGO', 'https://github.com/hexters/ladmin/blob/master/logo.svg?raw=true'),
+    'logos' => [
+      'primary' => env('LADMIN_LOGO', 'https://github.com/hexters/ladmin/blob/tw/logo-primary.svg?raw=true'),
+      'secondary' => env('LADMIN_LOGO', 'https://github.com/hexters/ladmin/blob/tw/logo-secondary.svg?raw=true'),
+    ],
 
     /**
      * Administrator prefix page

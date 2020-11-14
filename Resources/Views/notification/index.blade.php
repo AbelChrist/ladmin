@@ -1,6 +1,6 @@
-@extends('ladmin::layouts.app')
-@section('title', 'List of Notifications')
-@section('content')
+<x-ladmin-layout>
+  
+  <x-slot name="title">List of Notifications</x-slot>
     
 <div class="mb-3">
   <div class="tracking-list">
@@ -37,4 +37,4 @@
   </div>
 </div>
   
-@endsection
+</x-ladmin-layout>

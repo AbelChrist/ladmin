@@ -7,11 +7,14 @@
       $router = route($route, $params);
     }
   @endphp
-  <a href="{{ $router }}">
+  <a href="{{ $router }}" class="py-2 flex flex-auto items-center hover:text-gray-800">
     @if(isset($menu['icon']))
       <i class="{{ $menu['icon'] }}"></i> 
+    @else
+      {!! $menu['svg'] ?? null !!}
     @endif
-    {{ $menu['name'] }}
+    <span class="label">{{ $menu['name'] }}</span>
+    <div class="flex-grow"></div>
   </a>
 
   @if(isset($menu['submenus']))
