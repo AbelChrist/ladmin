@@ -22,6 +22,6 @@ class Layout extends Component {
      */
     public function render()
     {
-        return view('ladmin::layout.app');
+        return view('ladmin::layout.app', ['user' => $this->user]);
     }
 }
