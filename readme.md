@@ -202,7 +202,7 @@ Add this code to your  `webpack.mix.js` file
 
 const tailwindcss = require('tailwindcss');
 
-mix.js('Resources/js/app.js', 'dist')
+mix.js('Resources/js/app.js', 'public/css')
    .sass('resources/sass/app.scss', 'public/css')
       .options({
          processCssUrls: false,

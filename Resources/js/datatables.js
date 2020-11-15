@@ -1,6 +1,20 @@
 window.dt = require('datatables.net').default;
 
-let datatables = document.querySelectorAll('.ladmin-datatables');
-datatables.forEach(( table ) => {
-  
+$(function() {
+  $('.ladmin-datatables').each(function() {
+    let options = $(this).data('options');
+    $(this).DataTable({
+      language: {
+        search: '',
+        searchPlaceholder: 'Search...'
+      },
+      bLengthChange: false,
+      iDisplayLength: 50,
+      ...options
+    });
+  });
+
+  $('.ladmin-datatable-base').each(function() {
+    $(this).DataTable();
+  });
 });
