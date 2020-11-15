@@ -188,11 +188,11 @@ Input Component
 ## Custom Style
 Install node modules
 ```
-$ npm i jquery datatables.net alpinejs datatables.net-dt --save
+$ npm i tailwindcss jquery datatables.net alpinejs datatables.net-dt --save
 
 // OR
 
-$ yarn add jquery datatables.net alpinejs datatables.net-dt
+$ yarn add tailwindcss jquery datatables.net alpinejs datatables.net-dt
 
 ```
 
@@ -202,8 +202,10 @@ Add this code to your  `webpack.mix.js` file
 
 const tailwindcss = require('tailwindcss');
 
-mix.js('Resources/js/app.js', 'public/css')
-   .sass('resources/sass/app.scss', 'public/css')
+. . .
+
+mix.js('Resources/js/ladmin/app.js', 'public/css')
+   .sass('resources/sass/ladmin/app.scss', 'public/css')
       .options({
          processCssUrls: false,
          postCss: [ tailwindcss('./tailwind.ladmin.config.js') ],

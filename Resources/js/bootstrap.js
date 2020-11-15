@@ -1,10 +1,11 @@
+import 'alpinejs';
+import Ladmin from './ladmin';
 window._ = require('lodash');
 
 try {
-
+  
+  
   window.$ = window.jQuery = require('jquery');
-  import 'alpinejs';
-  import Ladmin from './ladmin';
   require('./datatables');
 
 } catch (error) {}

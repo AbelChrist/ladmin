@@ -1,4 +1,4 @@
-export class Ladmin {
+export default class Ladmin {
 
   constructor() {
     
