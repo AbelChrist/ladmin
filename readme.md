@@ -188,18 +188,28 @@ Input Component
 ## Custom Style
 Install node modules
 ```
-$ npm i jquery popper.js bootstrap @fortawesome/fontawesome-free datatables.net datatables.net-bs4 --save
+$ npm i jquery datatables.net alpinejs datatables.net-dt --save
 
 // OR
 
-$ yarn add jquery popper.js bootstrap @fortawesome/fontawesome-free datatables.net datatables.net-bs4
+$ yarn add jquery datatables.net alpinejs datatables.net-dt
 
 ```
 
 Add this code to your  `webpack.mix.js` file
 ```
-mix.js('resources/js/ladmin/app.js', 'public/js/ladmin/app.js')
-   .sass('resources/sass/ladmin/app.scss', 'public/css/ladmin/app.css');
+. . .
+
+const tailwindcss = require('tailwindcss');
+
+mix.js('Resources/js/app.js', 'dist')
+   .sass('resources/sass/app.scss', 'public/css')
+      .options({
+         processCssUrls: false,
+         postCss: [ tailwindcss('./tailwind.ladmin.config.js') ],
+      });
+
+. . .
 ```
 
 ## Notification

@@ -19,10 +19,13 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
+    "alpinejs": "^2.7.3",
+    "axios": "^0.21.0",
     "bootstrap": "^4.4.1",
-    "datatables.net": "^1.10.20",
+    "datatables.net": "^1.10.22",
     "datatables.net-bs4": "^1.10.20",
-    "jquery": ">=3.5.0",
+    "datatables.net-dt": "^1.10.22",
+    "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
     "tailwindcss": "^1.9.6"
   }

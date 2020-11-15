@@ -1,10 +1,10 @@
 <x-ladmin-card>
   <x-slot name="flat">
-    <div class="table-responsive">
-      <div class="top-button">
+    <div class="table-responsive relative">
+      <div class="top-button absolute top-0 mt-6 ml-3 z-40">
         {!! $options['topButton'] ?? null !!}
       </div>
-      <table class="table ladmin-datatables table-striped m-0" data-options='{!! json_encode($options) !!}'>
+      <table class="table ladmin-datatables table-striped" data-options='{!! json_encode($options) !!}'>
         <thead>
           <tr>
             @foreach ($fields as $field)

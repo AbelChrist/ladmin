@@ -1,14 +1,14 @@
-<div {{ $attributes->merge(['class' => 'card border-0 shadow-sm rounded-lg ' . $class]) }}>
+<div {{ $attributes->merge(['class' => 'bg-white rounded shadow ' . $class]) }}>
   @if(isset($header))
-    <div class="card-header">
+    <div class="p-6">
       {{ $header }}
     </div>
   @endif
 
   @if(empty($flat))
-  <div class="card-body">
+  <div class="p-6">
     @if($title)
-      <h4 class="card-title">{{ $title }}</h4>
+      <h4 class="text-lg">{{ $title }}</h4>
     @endif
     {{ $slot }}
   </div>
@@ -20,7 +20,7 @@
   </div>
   @endif
   @if(isset($footer))
-    <div class="card-footer">
+    <div class="p-6">
       {{ $footer }}
     </div>
   @endif

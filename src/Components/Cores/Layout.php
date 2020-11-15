@@ -1,10 +1,11 @@
 <?php
 
-namespace Hexters\Ladmin\Components;
+namespace Hexters\Ladmin\Components\Cores;
 
 use Illuminate\View\Component;
 
 class Layout extends Component {
+    
     public $user;
     /**
      * Create a new component instance.
@@ -22,6 +23,6 @@ class Layout extends Component {
      */
     public function render()
     {
-        return view('ladmin::layout.app', ['user' => $this->user]);
+        return view('ladmin::layouts.app');
     }
 }

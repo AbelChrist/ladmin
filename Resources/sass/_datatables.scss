@@ -1,0 +1,92 @@
+@import "~datatables.net-dt/css/jquery.dataTables.css";
+
+.table-responsive {
+  padding-top: 1rem;
+}
+
+.dataTables_wrapper select,
+  .dataTables_wrapper .dataTables_filter input {
+    color: #4a5568;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    margin-right: 1rem;
+    padding-bottom: .5rem;
+    line-height: 1.25;
+    border-width: 2px;
+    border-radius: .25rem;
+    border-color: #edf2f7;
+    background-color: #edf2f7;
+  }
+
+  
+  table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
+    background-color: #ebf4ff;	
+  }
+  
+  
+  .dataTables_wrapper .dataTables_paginate .paginate_button		{
+    font-weight: 700;				
+    border-radius: .25rem;			
+    border: 1px solid transparent;	
+  }
+  
+  
+  .dataTables_wrapper .dataTables_paginate .paginate_button.current	{
+    color: #fff !important;				
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+    font-weight: 700;					
+    border-radius: .25rem;				
+    background: theme('colors.primary') !important;		
+    border: 1px solid transparent;		
+  }
+
+  
+  .dataTables_wrapper .dataTables_paginate .paginate_button:hover		{
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);	 
+    font-weight: 700;					
+    border-radius: .25rem;
+    border: 1px solid transparent;		
+    background: theme('colors.primary');
+  }
+  
+  
+  table.dataTable.no-footer {
+    border-bottom: 1px solid #e2e8f0;	
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+  }
+  
+  
+  table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before, table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+    background-color: theme('colors.primary') !important; 
+  }
+
+  table.dataTable thead th, table.dataTable thead td {
+    color: theme('colors.primary');
+    border-bottom: solid rgba($color: #000000, $alpha: .08) 1px;
+  }
+
+  table.dataTable tbody tr {
+    
+    &:nth-child(even) {
+      background-color: theme('colors.gray.300');
+    }
+    
+    td {
+      padding: .5rem;
+    }
+  }
+  
+  .dataTables_wrapper {
+    .dataTables_length {
+      margin-left: 1rem;
+    }
+    .dataTables_info {
+      margin: 1rem;
+      color: theme('colors.gray.700');
+    }
+    .dataTables_paginate {
+      margin: 1rem;
+    }
+  }

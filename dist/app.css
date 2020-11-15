@@ -1,1 +1,103 @@
-@charset "UTF-8";@tailwind base;@tailwind components;@tailwind utilities;body{background-color:theme("colors.gray.300");color:theme("colors.gray.700")}.ladmin-main-menu.ladmin-sidebar-hidden{display:none}.ladmin-main-menu ul{margin-left:theme("width.3");padding-left:theme("width.3")}.ladmin-main-menu ul>li.active>a,.ladmin-main-menu ul>li.open>a{color:theme("colors.accent")}.ladmin-main-menu ul>li.open>ul{display:block}.ladmin-main-menu ul>li a{color:theme("colors.gray.200")}.ladmin-main-menu ul>li a svg{width:theme("width.6");display:inline;margin-right:theme("width.3")}.ladmin-main-menu ul>li>ul{display:none}.main-content .ladmin-top-navigation>li{display:inline-block}.main-content .ladmin-top-navigation>li>a{padding:0 theme("padding.3");display:inline-block}.container .body-content{height:calc(100% - theme("width.16"))}.breadcrumbs>li{display:inline-block}.breadcrumbs>li:after{content:"\203A";padding-left:.5rem;padding-right:.5rem}.breadcrumbs>li:last-child:after{display:none}.breadcrumbs>li a{font-weight:400}.ladmin-dropdown{position:relative}.ladmin-dropdown>ul{overflow:hidden;max-height:0;position:absolute;z-index:1000;transition:max-height .1s ease-out;background-color:theme("colors.white");right:0;min-width:theme("width.40")}.ladmin-dropdown.ladmin-dropdown-open>ul{display:block}.substr{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:100%;display:inline-block}
+@charset "UTF-8";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background-color: theme("colors.gray.300");
+  color: theme("colors.gray.700");
+}
+
+.ladmin-main-menu.ladmin-sidebar-hidden {
+  display: none;
+}
+
+.ladmin-main-menu ul {
+  margin-left: theme("width.3");
+  padding-left: theme("width.3");
+}
+
+.ladmin-main-menu ul > li.active > a {
+  color: theme("colors.accent");
+}
+
+.ladmin-main-menu ul > li.open > a {
+  color: theme("colors.accent");
+}
+
+.ladmin-main-menu ul > li.open > ul {
+  display: block;
+}
+
+.ladmin-main-menu ul > li a {
+  color: theme("colors.gray.200");
+}
+
+.ladmin-main-menu ul > li a svg {
+  width: theme("width.6");
+  display: inline;
+  margin-right: theme("width.3");
+}
+
+.ladmin-main-menu ul > li > ul {
+  display: none;
+}
+
+.main-content .ladmin-top-navigation > li {
+  display: inline-block;
+}
+
+.main-content .ladmin-top-navigation > li > a {
+  padding: 0 theme("padding.3");
+  display: inline-block;
+}
+
+.container .body-content {
+  height: calc(100% - theme("width.16"));
+}
+
+.breadcrumbs > li {
+  display: inline-block;
+}
+
+.breadcrumbs > li:after {
+  content: "\203A";
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.breadcrumbs > li:last-child::after {
+  display: none;
+}
+
+.breadcrumbs > li a {
+  font-weight: normal;
+}
+
+.ladmin-dropdown {
+  position: relative;
+}
+
+.ladmin-dropdown > ul {
+  overflow: hidden;
+  max-height: 0;
+  position: absolute;
+  z-index: 1000;
+  transition: max-height 100ms ease-out;
+  background-color: theme("colors.white");
+  right: 0;
+  min-width: theme("width.40");
+}
+
+.ladmin-dropdown.ladmin-dropdown-open > ul {
+  display: block;
+}
+
+.substr {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  display: inline-block;
+}
+

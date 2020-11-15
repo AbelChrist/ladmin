@@ -10,16 +10,18 @@ use Illuminate\Pagination\Paginator;
 /**
  * Components
  */
-use Hexters\Ladmin\Components\Card;
-use Hexters\Ladmin\Components\Input;
+use Hexters\Ladmin\Components\Components\Card;
+use Hexters\Ladmin\Components\Components\Input;
+use Hexters\Ladmin\Components\Components\Datatables;
+use Hexters\Ladmin\Components\Components\FormGroup;
+
 use Hexters\Ladmin\Components\Menus\Sidebar;
 use Hexters\Ladmin\Components\Menus\Toprightmenu;
+
+use Hexters\Ladmin\Components\Cores\Layout;
 use Hexters\Ladmin\Components\Cores\Breadcrumb;
 use Hexters\Ladmin\Components\Cores\Alert;
-use Hexters\Ladmin\Components\Datatables;
 use Hexters\Ladmin\Components\Cores\Notification;
-use Hexters\Ladmin\Components\FormGroup;
-use Hexters\Ladmin\Components\Layout;
 
 /**
  * Command
@@ -66,6 +68,7 @@ class LadminServiceProvider extends ServiceProvider
             __DIR__ . '/../dist/app.css' => public_path('/css/ladmin/app.css'),
             __DIR__ . '/../Resources/sass/' => base_path('/resources/sass/ladmin'),
             __DIR__ . '/../Resources/js/' => base_path('/resources/js/ladmin'),
+            __DIR__ . '/../tailwind.config.js' => base_path('/tailwind.ladmin.config.js'),
         ], 'assets');
         
         /**
