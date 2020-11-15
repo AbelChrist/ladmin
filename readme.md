@@ -204,12 +204,13 @@ const tailwindcss = require('tailwindcss');
 
 . . .
 
-mix.js('Resources/js/ladmin/app.js', 'public/css')
-   .sass('resources/sass/ladmin/app.scss', 'public/css')
+mix.js('Resources/js/ladmin/app.js', 'public/js/ladmin')
+   .sass('resources/sass/ladmin/app.scss', 'public/css/ladmin')
       .options({
          processCssUrls: false,
          postCss: [ tailwindcss('./tailwind.ladmin.config.js') ],
       });
+
 
 . . .
 ```
